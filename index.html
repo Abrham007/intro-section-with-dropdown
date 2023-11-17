@@ -13,21 +13,86 @@
     />
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  <body>
-    <!-- Features
-  Company
-  Careers
-  About
+  <body class="page">
+    <header class="header">
+      <img src="./images/logo.svg" alt="snap logo" />
+      <nav class="main-nav">
+        <a class="main-nav__link--drop" href="#"
+          ><div class="main-nav__link">
+            Features <img src="./images/icon-arrow-down.svg" alt="" />
+          </div>
+          <ul class="main-nav__drop-down-feature">
+            <li><img src="./images/icon-todo.svg" alt="" />Todo List</li>
+            <li><img src="./images/icon-calendar.svg" alt="" />Calendar</li>
+            <li><img src="./images/icon-reminders.svg" alt="" />Reminders</li>
+            <li><img src="./images/icon-planning.svg" alt="" />Planning</li>
+          </ul>
+        </a>
+        <a class="main-nav__link--drop" href="#"
+          ><div class="main-nav__link">
+            Company <img src="./images/icon-arrow-down.svg" alt="" />
+          </div>
+          <ul class="main-nav__drop-down-company">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Bolg</li>
+          </ul>
+        </a>
+        <a class="main-nav__link" href="#">Careers</a>
+        <a class="main-nav__link" href="#">About</a>
 
-  Login
-  Register
+        <div class="main-nav__btn-box">
+          <button class="main-nav__login">Login</button>
+          <button class="main-nav__register">Register</button>
+        </div>
+      </nav>
+      <button class="main-nav__menu-icon"></button>
+    </header>
 
-  Make remote work
+    <main class="main">
+      <section class="main__content">
+        <div class="main__text">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="main__btn">Learn more</button>
+        </div>
+        <div class="main__logo-box">
+          <img
+            class="main__logo"
+            src="./images/client-databiz.svg"
+            alt="databiz logo"
+          />
+          <img
+            class="main__logo"
+            src="./images/client-audiophile.svg"
+            alt="audiophile logo"
+          />
+          <img
+            class="main__logo"
+            src="./images/client-meet.svg"
+            alt="meet logo"
+          />
+          <img
+            class="main__logo"
+            src="./images/client-maker.svg"
+            alt="maker logo"
+          />
+        </div>
+      </section>
+      <div class="main__img" role="presentation"></div>
+    </main>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
