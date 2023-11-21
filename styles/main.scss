@@ -21,9 +21,9 @@ a,
 li {
   color: var(--Medium-Grey);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1.15;
 
   &:hover {
     cursor: pointer;
@@ -54,16 +54,16 @@ li {
 
 h1 {
   color: var(--Black);
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 1;
   letter-spacing: -1.111px;
 
   @include custom-media(600px) {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 42px;
+    line-height: 1.16;
     letter-spacing: -0.5px;
   }
 }
@@ -71,15 +71,15 @@ h1 {
 p {
   color: var(--Medium-Grey);
   font-family: Epilogue;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 1.5;
 
   @include custom-media(600px) {
-    font-size: 16px;
+    font-size: 1;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.6;
   }
 }
 
@@ -140,6 +140,14 @@ p {
 
     &--drop {
       @extend .main-nav__link;
+      background-color: transparent;
+      border: none;
+      color: var(--Medium-Grey);
+
+      &:hover {
+        cursor: pointer;
+        color: var(--Black);
+      }
 
       @include custom-media(880px) {
         align-items: flex-start;
@@ -206,14 +214,9 @@ p {
     height: 18px;
     margin-left: auto;
     border: none;
-    background-image: url(../images/icon-menu.svg);
 
     @include custom-media(880px) {
-      // display: none;
       display: inline-block;
-      // position: absolute;
-      // top: 20px;
-      // right: 20px;
     }
   }
 }
@@ -290,22 +293,6 @@ p {
     width: max-content;
     height: max-content;
   }
-
-  &__img {
-    width: 480px;
-    height: 640px;
-    background-image: url(../images/image-hero-desktop.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-
-    @include custom-media(600px) {
-      width: 375px;
-      height: 281.25px;
-      background-image: url(../images/image-hero-mobile.png);
-      background-size: contain;
-    }
-  }
 }
 
 .display-flex {
@@ -313,11 +300,10 @@ p {
 }
 
 .menu-close {
-  background-image: url(../images/icon-close-menu.svg) !important;
-  background-color: transparent;
   width: 25px;
   height: 25px;
   position: absolute;
   top: 20px;
   right: 20px;
+  background-color: transparent;
 }

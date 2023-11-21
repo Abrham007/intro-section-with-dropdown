@@ -15,9 +15,9 @@ a,
 li {
   color: var(--Medium-Grey);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1.15;
 }
 a:hover,
 li:hover {
@@ -48,17 +48,17 @@ li {
 
 h1 {
   color: var(--Black);
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 1;
   letter-spacing: -1.111px;
 }
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 42px;
+    line-height: 1.16;
     letter-spacing: -0.5px;
   }
 }
@@ -66,16 +66,16 @@ h1 {
 p {
   color: var(--Medium-Grey);
   font-family: Epilogue;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 1.5;
 }
 @media screen and (max-width: 600px) {
   p {
-    font-size: 16px;
+    font-size: 1;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.6;
   }
 }
 
@@ -135,6 +135,15 @@ p {
   display: flex;
   gap: 9px;
   align-items: center;
+}
+.main-nav__link--drop {
+  background-color: transparent;
+  border: none;
+  color: var(--Medium-Grey);
+}
+.main-nav__link--drop:hover {
+  cursor: pointer;
+  color: var(--Black);
 }
 @media screen and (max-width: 880px) {
   .main-nav__link--drop {
@@ -196,7 +205,6 @@ p {
   height: 18px;
   margin-left: auto;
   border: none;
-  background-image: url(../images/icon-menu.svg);
 }
 @media screen and (max-width: 880px) {
   .main-nav__menu-icon {
@@ -276,35 +284,18 @@ p {
   width: max-content;
   height: max-content;
 }
-.main__img {
-  width: 480px;
-  height: 640px;
-  background-image: url(../images/image-hero-desktop.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
-}
-@media screen and (max-width: 600px) {
-  .main__img {
-    width: 375px;
-    height: 281.25px;
-    background-image: url(../images/image-hero-mobile.png);
-    background-size: contain;
-  }
-}
 
 .display-flex {
   display: flex !important;
 }
 
 .menu-close {
-  background-image: url(../images/icon-close-menu.svg) !important;
-  background-color: transparent;
   width: 25px;
   height: 25px;
   position: absolute;
   top: 20px;
   right: 20px;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=main.css.map */
