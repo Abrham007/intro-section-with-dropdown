@@ -135,6 +135,9 @@ p {
   display: flex;
   gap: 9px;
   align-items: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.15;
 }
 .main-nav__link--drop {
   background-color: transparent;
