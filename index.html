@@ -25,35 +25,63 @@
     <header class="header">
       <img src="./images/logo.svg" alt="snap logo" />
       <nav class="main-nav js-main-nav">
-        <a
+        <button
           class="main-nav__link--drop"
           href="#"
-          aria-live="assertive"
-          aria-atomic="true"
-          ><div class="main-nav__link js-drop-down-link">
-            Features <img src="./images/icon-arrow-down.svg" alt="" />
+          aria-expanded="false"
+          aria-controls="drop-down-1"
+        >
+          <div class="main-nav__link js-drop-down-link">
+            Features
+            <img
+              class="js-drop-icon"
+              src="./images/icon-arrow-down.svg"
+              alt=""
+            />
           </div>
-          <ul class="main-nav__drop-down-feature js-drop-down">
-            <li><img src="./images/icon-todo.svg" alt="" />Todo List</li>
-            <li><img src="./images/icon-calendar.svg" alt="" />Calendar</li>
-            <li><img src="./images/icon-reminders.svg" alt="" />Reminders</li>
-            <li><img src="./images/icon-planning.svg" alt="" />Planning</li>
+          <ul id="drop-down-1" class="main-nav__drop-down-feature js-drop-down">
+            <li>
+              <img src="./images/icon-todo.svg" alt="" /><a href="#"
+                >Todo List</a
+              >
+            </li>
+            <li>
+              <img src="./images/icon-calendar.svg" alt="" /><a href="#"
+                >Calendar</a
+              >
+            </li>
+            <li>
+              <img src="./images/icon-reminders.svg" alt="" /><a href="#"
+                >Reminders</a
+              >
+            </li>
+            <li>
+              <img src="./images/icon-planning.svg" alt="" /><a href="#"
+                >Planning</a
+              >
+            </li>
           </ul>
-        </a>
-        <a
+        </button>
+        <button
           class="main-nav__link--drop"
           href="#"
-          aria-live="assertive"
-          aria-atomic="true"
-          ><div class="main-nav__link js-drop-down-link">
-            Company <img src="./images/icon-arrow-down.svg" alt="" />
+          aria-expanded="false"
+          aria-controls="drop-down-2"
+        >
+          <div class="main-nav__link js-drop-down-link">
+            Company
+            <img
+              class="js-drop-icon"
+              src="./images/icon-arrow-down.svg"
+              alt=""
+            />
           </div>
-          <ul class="main-nav__drop-down-company js-drop-down">
-            <li>History</li>
-            <li>Our Team</li>
-            <li>Bolg</li>
+          <ul id="drop-down-2" class="main-nav__drop-down-company js-drop-down">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="">Bolg</a></li>
           </ul>
-        </a>
+        </button>
         <a class="main-nav__link" href="#">Careers</a>
         <a class="main-nav__link" href="#">About</a>
 
@@ -62,11 +90,17 @@
           <button class="main-nav__register">Register</button>
         </div>
       </nav>
-      <button class="main-nav__menu-icon"></button>
+      <button class="main-nav__menu-icon js-menu-icon">
+        <img
+          class="main-nav__menu-img js-menu-img"
+          src="./images/icon-menu.svg"
+          alt="menu icon"
+        />
+      </button>
     </header>
 
     <main class="main">
-      <article class="main__content">
+      <section class="main__content">
         <div class="main__text">
           <h1>Make remote work</h1>
           <p>
@@ -97,8 +131,21 @@
             alt="maker logo"
           />
         </div>
-      </article>
-      <div class="main__img" role="presentation"></div>
+      </section>
+      <picture class="main__img">
+        <source
+          srcset="./images/image-hero-mobile.png"
+          media="(max-width: 600px)"
+          width="375"
+          height="282"
+        />
+        <img
+          src="./images/image-hero-desktop.png"
+          alt=""
+          width="480"
+          height="640"
+        />
+      </picture>
     </main>
 
     <script src="./js/main.js"></script>
